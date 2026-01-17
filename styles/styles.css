@@ -6,6 +6,10 @@ body {
 }
 
 /* Header */
+h1 {
+    color: white;
+}
+
 header {
     background-color: steelblue;
     color: white;
@@ -15,6 +19,12 @@ header {
     nav {
         background-color: steelblue;
         padding: 0.5rem;
+    }
+
+    nav a {
+        color: white;
+        padding: 0.5rem;
+        display: block;
     }
 }
 
@@ -29,8 +39,12 @@ main {
 main img {
     width: 150px;
     height: auto;
+    border: 1px solid #333;
+    padding: 0.25rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
     display: block;
     margin: 0 auto 1rem;
+}
 }
 
 /* Paragraph padding reset */
