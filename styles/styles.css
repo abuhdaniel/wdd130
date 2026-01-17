@@ -6,26 +6,29 @@ body {
 }
 
 /* Header */
-h1 {
-    color: white;
-}
-
 header {
     background-color: steelblue;
     color: white;
     padding: 1rem;
     text-align: center;
+}
 
-    nav {
-        background-color: steelblue;
-        padding: 0.5rem;
-    }
+/* h1 rule (required) */
+h1 {
+    color: white;
+}
 
-    nav a {
-        color: white;
-        padding: 0.5rem;
-        display: block;
-    }
+/* Navigation (required) */
+nav {
+    background-color: steelblue;
+    padding: 0.5rem;
+}
+
+/* Navigation links (required) */
+nav a {
+    color: white;
+    padding: 0.5rem;
+    display: block;
 }
 
 /* Main content */
@@ -35,7 +38,7 @@ main {
     padding: 1rem;
 }
 
-/* Profile image inside main */
+/* Profile image inside main (required properties) */
 main img {
     width: 150px;
     height: auto;
@@ -44,7 +47,6 @@ main img {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
     display: block;
     margin: 0 auto 1rem;
-}
 }
 
 /* Paragraph padding reset */
