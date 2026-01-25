@@ -65,7 +65,7 @@ article {
     opacity: 0.7;
 }
 
-.article {
+.hero article {
     position: absolute;
     bottom: 20px;
     left: 20px;
@@ -74,7 +74,7 @@ article {
     max-width: 400px;
 }
 
-.article img {
+.hero article img {
     float: right;
     width: 125px;
     margin-left: 12px;
