@@ -3,9 +3,6 @@
     --secondary-color: #5fa8d3;
     --accent-color: #0b132b;
     --normal-color: #fff;
-
-    --heading-font: Arial, Helvetica, sans-serif;
-    --body-font: Verdana, Geneva, sans-serif;
 }
 
 * {
@@ -15,7 +12,9 @@
 }
 
 body {
-    font-family: var(--body-font);
+    font-family: Verdana,
+        Geneva,
+        sans-serif;
     color: var(--accent-color);
 }
 
@@ -28,7 +27,9 @@ footer {
 
 h1,
 h2 {
-    font-family: var(--heading-font);
+    font-family: Arial,
+        Helvetica,
+        sans-serif;
     color: var(--primary-color);
 }
 
