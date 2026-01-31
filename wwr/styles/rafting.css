@@ -11,12 +11,11 @@
 }
 
 body {
-    font-family: Verdana,
-        Geneva,
-        sans-serif;
+    font-family: Verdana, Geneva, sans-serif;
     color: var(--accent-color);
 }
 
+/* ===== PAGE WIDTH ===== */
 header,
 main,
 footer {
@@ -24,14 +23,14 @@ footer {
     margin: 0 auto;
 }
 
+/* ===== HEADINGS ===== */
 h1,
 h2 {
-    font-family: Arial,
-        Helvetica,
-        sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     color: var(--primary-color);
 }
 
+/* ===== GENERAL SPACING ===== */
 nav,
 p,
 section,
@@ -40,10 +39,32 @@ article {
     padding: 8px;
 }
 
+/* ===== HEADER (GRID REQUIRED) ===== */
+header {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+}
+
+/* ===== NAV (FLEX REQUIRED) ===== */
+nav {
+    display: flex;
+    justify-content: flex-end;
+    gap: 1.5rem;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--accent-color);
+    font-weight: bold;
+}
+
+/* ===== SOCIAL MEDIA LINKS ===== */
 .socialmedia a {
     text-decoration: none;
 }
 
+/* ===== HERO SECTION ===== */
 .hero {
     position: relative;
 }
@@ -78,4 +99,38 @@ article {
     float: right;
     width: 125px;
     margin-left: 12px;
+}
+
+/* ===== HISTORY SECTION (GRID LAYOUT) ===== */
+.history {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+
+/* ===== ADVENTURES SECTION (5 IMAGES HORIZONTAL) ===== */
+.adventures {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 1rem;
+}
+
+.adventures img {
+    width: 100%;
+}
+
+/* ===== FOOTER (SOCIAL ICONS RIGHT) ===== */
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.socialmedia {
+    display: flex;
+    gap: 1rem;
+}
+
+.socialmedia img {
+    width: 32px;
 }
