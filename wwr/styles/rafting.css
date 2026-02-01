@@ -1,15 +1,17 @@
 :root {
     --primary-color: #1b4965;
     --accent-color: #0b132b;
-    --normal-color: #fff;
+    --normal-color: #ffffff;
 }
 
+/* ===== RESET ===== */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* ===== BODY ===== */
 body {
     font-family: Verdana, Geneva, sans-serif;
     color: var(--accent-color);
@@ -46,7 +48,7 @@ header {
     align-items: center;
 }
 
-/* ===== NAV (FLEX REQUIRED) ===== */
+/* ===== NAVIGATION (FLEX REQUIRED) ===== */
 nav {
     display: flex;
     justify-content: flex-end;
@@ -60,8 +62,17 @@ nav a {
 }
 
 /* ===== SOCIAL MEDIA LINKS ===== */
+.socialmedia {
+    display: flex;
+    gap: 1rem;
+}
+
 .socialmedia a {
     text-decoration: none;
+}
+
+.socialmedia img {
+    width: 32px;
 }
 
 /* ===== HERO SECTION ===== */
@@ -101,14 +112,14 @@ nav a {
     margin-left: 12px;
 }
 
-/* ===== HISTORY SECTION (GRID LAYOUT) ===== */
+/* ===== HISTORY SECTION (GRID) ===== */
 .history {
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
 }
 
-/* ===== ADVENTURES SECTION (5 IMAGES HORIZONTAL) ===== */
+/* ===== ADVENTURES SECTION ===== */
 .adventures {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
@@ -119,18 +130,75 @@ nav a {
     width: 100%;
 }
 
-/* ===== FOOTER (SOCIAL ICONS RIGHT) ===== */
+/* ===== FOOTER ===== */
 footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.socialmedia {
-    display: flex;
-    gap: 1rem;
+/* ==================================================
+   CONTACT PAGE STYLES
+   ================================================== */
+
+/* ===== COMPANY INFO ===== */
+.company-info iframe {
+    width: 100%;
+    height: 300px;
+    border: none;
+    margin-top: 1rem;
 }
 
-.socialmedia img {
-    width: 32px;
+/* ===== EMPLOYEES ===== */
+.employees {
+    display: flex;
+    justify-content: space-around;
+    gap: 1rem;
+    text-align: center;
+}
+
+.employees figure {
+    max-width: 200px;
+}
+
+.employees img {
+    width: 100%;
+    border-radius: 4px;
+}
+
+/* ===== CONTACT FORM ===== */
+.contact-form form {
+    max-width: 600px;
+    margin: 0 auto;
+    display: grid;
+    gap: 0.75rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 0.5rem;
+    font-family: inherit;
+}
+
+.contact-form fieldset {
+    border: 1px solid #ccc;
+    padding: 1rem;
+}
+
+.contact-form legend {
+    padding: 0 0.5rem;
+    font-weight: bold;
+}
+
+.contact-form button {
+    background-color: var(--primary-color);
+    color: var(--normal-color);
+    border: none;
+    padding: 0.75rem;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: var(--accent-color);
 }
